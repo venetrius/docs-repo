@@ -1,0 +1,12 @@
+name: Run Action
+
+on:
+  workflow_call:
+
+jobs:
+  run-action:
+    runs-on: ubuntu-latest
+    name: version-label-automation
+    steps:
+      - name: Print message
+        run: echo "hello from reusable workflow"
